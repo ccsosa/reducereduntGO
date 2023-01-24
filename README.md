@@ -11,12 +11,14 @@ A full list of libraries needed is included below.
 
 The reducereduntGO.R function uses the results of enrichment analysis and remove redundant terms for biological process. Please load the function before try this this example. This function does:
 
-1.) Get the children terms of each GO term using the function GOBPCHILDREN and stack them in a data frame
-2.) Check if the children terms are in the enrichment output (no filtered by FDR) and add the FDR values and add the parent term as well to get a table with both, the children and parents
-3.) Use the min with which.min the GO term id with the lowest FDR value to only conserve children terms with FDR values lower than the parent term
-4.) save the GO term id in a slot of a list with the same rows as the enrichment output
-5.) Filter by the unique list of GO terms obtained.
+- Get the children terms of each GO term using the function GOBPCHILDREN and stack them in a data frame
+- Check if the children terms are in the enrichment output (no filtered by FDR) and add the FDR values and add the parent term as well to get a table with both, the children and parents
+- Use the min with which.min the GO term id with the lowest FDR value to only conserve children terms with FDR values lower than the parent term
+- Save the GO term id in a slot of a list with the same rows as the enrichment output
+- Filter by the unique list of GO terms obtained.
 
+## Usage
+ Pending tasks: implement function to use molecular function and cellular compartment
 ```r
 ###Example
 require(gprofiler2);require(stringr);require(GOCompare)
