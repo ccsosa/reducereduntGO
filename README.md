@@ -18,7 +18,8 @@ The reducereduntGO.R function uses the results of enrichment analysis and remove
 - Filter by the unique list of GO terms obtained.
 
 ## Usage
- Pending tasks: implement function to use molecular function and cellular compartment
+- Pending tasks: implement function to use molecular function and cellular compartment
+- An example using GOCompare is provided in the R file Cancer_hallmark_reduce_terms.R 
 ```r
 ###Example
 require(gprofiler2);require(stringr);require(GOCompare)
