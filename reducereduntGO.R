@@ -3,6 +3,8 @@ reducereduntGO <- function(df,GO.ID,FDR_col){
   
   require(GO.db)
   ###############################
+  
+  if(nrow(df)>0){
   ###checking to filter GO:BP where children have better FDR values
   GO_IDs_initial <- data.frame(INITIAL = df[,GO.ID],
                                SUGGESTED = NA)
@@ -48,6 +50,10 @@ reducereduntGO <- function(df,GO.ID,FDR_col){
   SUGGESTED_GO <- unique(GO_IDs_initial$SUGGESTED)
   #Filtering for all the output and obtain a filter table
   df1 <- df[df[,GO.ID] %in% SUGGESTED_GO,]
+  } else {
+    warning("NO RESULTS AVAILABLE")
+    df1 <- df
+  }
   return(df1)
 }
 
