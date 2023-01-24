@@ -19,7 +19,14 @@ The reducereduntGO.R function uses the results of enrichment analysis and remove
 
 ## Usage
 - Pending tasks: implement function to use molecular function and cellular compartment
-- An example using GOCompare is provided in the R file Cancer_hallmark_reduce_terms.R 
+- An example using GOCompare is provided in the R file Cancer_hallmark_reduce_terms.R
+
+## Requirements
+- To use this function you need a dataframe with the enrichment results. I recommend only use with FDR values thrseshold (e.g. FDR <0.05) to avoid excess of computational time. The functions parameters are:
+- `df` the results dataframe which includes p values and a column feature where the categories (genelists are named hereif it is the case).
+- `GO.ID`is the column name of the GO term id (e.g. GO:00001)
+- `FDR_col.ID`is the column name with the FDR values
+
 ```r
 ###Example
 require(gprofiler2);require(stringr);require(GOCompare)
