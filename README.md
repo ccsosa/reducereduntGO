@@ -61,7 +61,7 @@ x_s1 <- lapply(seq_len(length(CH)),function(i){
 ```
 
 ## Author
-Main:Chrystian C. Sos
+Main:Chrystian C. Sosa
 
 ## License
 GNU GENERAL PUBLIC LICENSE Version 3
