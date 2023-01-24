@@ -26,7 +26,7 @@ The reducereduntGO.R function uses the results of enrichment analysis and remove
 - `df` the results dataframe which includes p values and a column feature where the categories (genelists are named hereif it is the case). The df looks like this:
 
 feature | feature | term_id | p_value
------------- | -------------
+------------ | ------------- | ------------- | -------------
 AID | Response to stress | GO:0006950  | 0.01
 DCE | Response to external biotic stimulus | GO:0043207 | 0.04
 AID | Regulation of cell size | GO:0008361  | 0.005
