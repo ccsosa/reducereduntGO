@@ -25,7 +25,7 @@ The reducereduntGO.R function uses the results of enrichment analysis and remove
 - To use this function you need a dataframe with the enrichment results. I recommend only use with FDR values thrseshold (e.g. FDR <0.05) to avoid excess of computational time. The functions parameters are:
 - `df` the results dataframe which includes p values and a column feature where the categories (genelists are named hereif it is the case). The df looks like this:
 
-feature | feature | term_id | p_value
+feature | go_term_name | term_id | p_value
 ------------ | ------------- | ------------- | -------------
 AID | Response to stress | GO:0006950  | 0.01
 DCE | Response to external biotic stimulus | GO:0043207 | 0.04
