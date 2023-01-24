@@ -17,6 +17,7 @@ The reducereduntGO.R function uses the results of enrichment analysis and remove
 4.) save the GO term id in a slot of a list with the same rows as the enrichment output
 5.) Filter by the unique list of GO terms obtained.
 
+```r
 ###Example
 require(gprofiler2);require(stringr);require(GOCompare)
 
